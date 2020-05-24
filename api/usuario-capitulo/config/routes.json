@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/usuario-capitulos",
+      "handler": "usuario-capitulo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuario-capitulos/count",
+      "handler": "usuario-capitulo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuario-capitulos/:id",
+      "handler": "usuario-capitulo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuario-capitulos",
+      "handler": "usuario-capitulo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuario-capitulos/:id",
+      "handler": "usuario-capitulo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/usuario-capitulos/:id",
+      "handler": "usuario-capitulo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

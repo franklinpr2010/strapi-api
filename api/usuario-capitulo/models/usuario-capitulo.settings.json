@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "usuario_capitulos",
+  "info": {
+    "name": "UsuarioCapitulo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "obs": {
+      "type": "string"
+    },
+    "user": {
+      "via": "usuario_capitulos",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "capitulo": {
+      "via": "usuario_capitulos",
+      "model": "capitulo"
+    }
+  }
+}

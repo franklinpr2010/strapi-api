@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capitulos",
+  "info": {
+    "name": "Capitulo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "imagem": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "resumo": {
+      "type": "string"
+    },
+    "cor": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "nivel": {
+      "type": "string"
+    },
+    "usuario_capitulos": {
+      "collection": "usuario-capitulo",
+      "via": "capitulo"
+    },
+    "lotes": {
+      "collection": "lote",
+      "via": "capitulo"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "capitulo"
+    }
+  }
+}

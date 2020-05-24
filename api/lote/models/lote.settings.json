@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lotes",
+  "info": {
+    "name": "Lote"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "descricao": {
+      "type": "string"
+    },
+    "capitulo": {
+      "via": "lotes",
+      "model": "capitulo"
+    },
+    "numero": {
+      "type": "integer"
+    },
+    "arquivo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

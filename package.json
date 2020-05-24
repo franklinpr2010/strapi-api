@@ -1,0 +1,42 @@
+{
+  "name": "ohc-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "curl": "^0.1.4",
+    "heroku": "^7.41.1",
+    "knex": "<0.20.0",
+    "sqlite3": "^4.2.0",
+    "strapi": "3.0.0-beta.20.1",
+    "strapi-admin": "3.0.0-beta.20.1",
+    "strapi-connector-bookshelf": "3.0.0-beta.20.1",
+    "strapi-email-nodemailer": "^0.2.1",
+    "strapi-plugin-content-manager": "3.0.0-beta.20.1",
+    "strapi-plugin-content-type-builder": "3.0.0-beta.20.1",
+    "strapi-plugin-email": "3.0.0-beta.20.1",
+    "strapi-plugin-upload": "3.0.0-beta.20.1",
+    "strapi-plugin-users-permissions": "3.0.0-beta.20.1",
+    "strapi-provider-email-nodemailer": "^2.0.0",
+    "strapi-provider-email-sendgrid": "^3.0.0-beta.20.3",
+    "strapi-utils": "3.0.0-beta.20.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "fb93a8cf-eeac-46e6-b6a9-2ac8bcb2a0fa"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
